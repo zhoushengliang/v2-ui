@@ -1,14 +1,7 @@
 中文 | [English](README.en.md)
 
-# 捐赠支持
-如果你觉得面板好用的话，可以考虑一下捐赠支持，金额随意，感谢支持。
- - [Paypal](https://blog.sprov.xyz/go/support-paypal)
- - USDT(TRC20)：TN9Q85uH2hLsAGZVQ1TKSPDvXqXvrLG7nK
- - 以太坊 (ETH)：0xa77579db35ad766844d41aca541d658349268012
- - 比特币 (BTC)：bc1qemdf5vdz8cq07cdcqzhvzewy35994cxt7gnrpegaz8txwxfp2ysqtfw6hh
-
 # v2-ui
-支持多协议多用户的 v2ray 面板，Support multi-protocol multi-user v2ray panel
+支持多协议多用户的 xray 面板，Support multi-protocol multi-user xray panel
 
 # 帮助翻译
 面板目前支持中文与英文，如果你发现了错误的翻译想帮助修正，或者想帮助翻译成更多的语言，可以在 translations 文件夹中找到各语言对应的翻译，例如 [translations/zh/LC_MESSAGES/message.po](translations/zh/LC_MESSAGES/messages.po) 文件是中文翻译内容。其中 msgid 是英文原文，msgstr 是翻译后的内容，每个 msgid 对应一个 msgstr。
@@ -48,16 +41,8 @@ bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
 ```
 
 ## 手动安装&升级
-### 手动安装 v2ray
-https://github.com/v2ray/v2ray-core/releases
-
-进入上面的 Github 地址，下载 v2ray 最新的 v2ray-linux-64.zip 文件，下载完成后将该文件上传至你的 VPS 里的 root 目录下。
-
-使用以下命令进行本地安装 v2ray，如果你将 v2ray-linux-64.zip 文件上传至了其它目录，那么需要将命令中的 /root/v2ray-linux-64.zip 替换为你实际的文件路径。
-```
-bash <(curl -L -s https://install.direct/go.sh) --local /root/v2ray-linux-64.zip
-```
-如果安装顺利的话，进入下一步，若安装不顺利的话，可以向 v2ray 官方寻求帮助，因为这是 v2ray 官方的脚本，不是我的。
+### 手动安装 xray
+无需手动安装 v2ray，v2-ui 自带官方 xray 内核
 
 ### 手动安装 v2-ui
 https://github.com/sprov065/v2-ui/releases
@@ -70,7 +55,7 @@ cd /usr/local/
 tar zxvf v2-ui-linux.tar.gz
 rm v2-ui-linux.tar.gz -f
 cd v2-ui
-chmod +x v2-ui
+chmod +x v2-ui bin/xray-v2-ui
 cp -f v2-ui.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable v2-ui
@@ -170,3 +155,7 @@ systemctl daemon-reload
 群组：https://t.me/sprov_blog
 
 频道：https://t.me/sprov_channel
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/sprov065/v2-ui.svg)](https://starchart.cc/sprov065/v2-ui)
