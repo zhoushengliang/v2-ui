@@ -774,9 +774,6 @@ msgstr ""
 #~ msgid "show"
 #~ msgstr ""
 
-#~ msgid "Reset traffic interval days"
-#~ msgstr ""
-
 #~ msgid ""
 #~ "May be due to account information "
 #~ "configuration error caused by v2ray "
