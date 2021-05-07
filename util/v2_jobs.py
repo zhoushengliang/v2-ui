@@ -88,11 +88,11 @@ def init():
     schedule_job(check_v2_config_job, config.get_v2_config_check_interval())
     schedule_job(traffic_job, config.get_traffic_job_interval())
     schedule_job(check_v2ay_alive_job, 40)
-    # reset_day = config.get_reset_traffic_day()
-    # if reset_day <= 0:
-    #     return
-    # now = datetime.now()
-    # next_day = now.date() + timedelta(days=1)
-    # next_day = datetime.combine(next_day, datetime.min.time())
-    #
-    # Timer((next_day - now).seconds + 5, reset_traffic_job).start()
+    reset_day = config.get_reset_traffic_day()
+    if reset_day <= 0:
+        return
+    now = datetime.now()
+    next_day = now.date() + timedelta(days=1)
+    next_day = datetime.combine(next_day, datetime.min.time())
+
+    Timer((next_day - now).seconds + 5, reset_traffic_job).start()

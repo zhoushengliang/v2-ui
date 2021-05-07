@@ -678,6 +678,10 @@ msgstr ""
 msgid "Statistical traffic interval time"
 msgstr ""
 
+#: templates/v2ray/setting.html:138
+msgid "Reset traffic interval days"
+msgstr ""
+
 #: templates/v2ray/setting.html:187
 msgid "xray core version"
 msgstr ""
