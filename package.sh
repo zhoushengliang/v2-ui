@@ -14,4 +14,4 @@ rm -rf dist
 pyinstaller v2-ui.spec
 
 echo "进行压缩"
-tar zcvf ./dist/v2-ui.tar.gz ./dist/v2-ui
+tar zcvf ./dist/v2-ui.tar.gz -C ./dist v2-ui
