@@ -682,7 +682,7 @@ msgstr "統計流量間隔"
 
 #: templates/v2ray/setting.html:138
 msgid "Reset traffic interval days"
-msgstr "重置流量間隔"
+msgstr "重置流量日"
 
 #: templates/v2ray/setting.html:187
 msgid "xray core version"
