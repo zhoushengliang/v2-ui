@@ -156,6 +156,8 @@ def init_db(update=False):
     add_if_not_exist(Setting('reset_traffic_day', 'reset_traffic_day', '1', 'int', '', True), update)
     add_if_not_exist(Setting('is_traffic_reset', 'is_traffic_reset', '0', 'int', '', False), update)
     add_if_not_exist(Setting('secret_key', '', os.urandom(24), 'text', '', True), False)
+    add_if_not_exist(Setting('total_traffic_thredsold', 'total_traffic_thredsold', '0', 'int', '', False), update)
+
     db.session.commit()
 
 
