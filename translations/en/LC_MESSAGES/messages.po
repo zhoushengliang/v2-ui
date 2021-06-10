@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-06-10 15:43+0800\n"
+"POT-Creation-Date: 2021-06-10 15:48+0800\n"
 "PO-Revision-Date: 2019-08-14 12:55+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -99,6 +99,7 @@ msgid "hours"
 msgstr ""
 
 #: templates/common/base.html:49 templates/v2ray/setting.html:138
+#: templates/v2ray/setting.html:143
 msgid "days"
 msgstr ""
 
@@ -290,7 +291,7 @@ msgid "update account"
 msgstr ""
 
 #: templates/v2ray/accounts.html:358 templates/v2ray/setting.html:37
-#: templates/v2ray/setting.html:203
+#: templates/v2ray/setting.html:208
 msgid "update"
 msgstr ""
 
@@ -497,7 +498,7 @@ msgid "status"
 msgstr ""
 
 #: templates/v2ray/index.html:66 templates/v2ray/index.html:232
-#: templates/v2ray/setting.html:189
+#: templates/v2ray/setting.html:194
 msgid "error"
 msgstr ""
 
@@ -660,7 +661,7 @@ msgid "Change Effective Time"
 msgstr ""
 
 #: templates/v2ray/setting.html:131 templates/v2ray/setting.html:135
-#: templates/v2ray/setting.html:139
+#: templates/v2ray/setting.html:139 templates/v2ray/setting.html:144
 msgid ""
 "Too small number can lead to increased CPU usage, fill 0 or negative at "
 "your own risk."
@@ -670,65 +671,65 @@ msgstr ""
 msgid "Statistical traffic interval time"
 msgstr ""
 
-#: templates/v2ray/setting.html:138
+#: templates/v2ray/setting.html:138 templates/v2ray/setting.html:143
 msgid "Reset traffic interval days"
 msgstr ""
 
-#: templates/v2ray/setting.html:179
+#: templates/v2ray/setting.html:184
 msgid "xray core version"
 msgstr ""
 
-#: templates/v2ray/setting.html:180
+#: templates/v2ray/setting.html:185
 msgid "current panel version"
 msgstr ""
 
-#: templates/v2ray/setting.html:189
+#: templates/v2ray/setting.html:194
 msgid "not supported type"
 msgstr ""
 
-#: templates/v2ray/setting.html:226
+#: templates/v2ray/setting.html:231
 msgid "please input old username"
 msgstr ""
 
-#: templates/v2ray/setting.html:228
+#: templates/v2ray/setting.html:233
 msgid "please input old password"
 msgstr ""
 
-#: templates/v2ray/setting.html:230
+#: templates/v2ray/setting.html:235
 msgid "please input new username"
 msgstr ""
 
-#: templates/v2ray/setting.html:232
+#: templates/v2ray/setting.html:237
 msgid "please input new password"
 msgstr ""
 
-#: templates/v2ray/setting.html:251
+#: templates/v2ray/setting.html:256
 msgid "NOTICE"
 msgstr ""
 
-#: templates/v2ray/setting.html:253
+#: templates/v2ray/setting.html:258
 msgid ""
 "Most of the configuration items on this page are directly related to the "
 "survival of the panel and v2ray."
 msgstr ""
 
-#: templates/v2ray/setting.html:254
+#: templates/v2ray/setting.html:259
 msgid ""
 "Modifying the wrong value will cause the panel to fail to start, then you"
 " must reset all values."
 msgstr ""
 
-#: templates/v2ray/setting.html:255
+#: templates/v2ray/setting.html:260
 msgid ""
 "Please make a backup yourself. If the data is lost, I will not be "
 "responsible for it."
 msgstr ""
 
-#: templates/v2ray/setting.html:257
+#: templates/v2ray/setting.html:262
 msgid "understood"
 msgstr ""
 
-#: templates/v2ray/setting.html:258
+#: templates/v2ray/setting.html:263
 msgid "not remind"
 msgstr ""
 
