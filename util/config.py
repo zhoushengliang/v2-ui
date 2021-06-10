@@ -45,7 +45,9 @@ def update_setting_by_key(key, value):
 
 
 def all_settings():
-    return Setting.query.filter(Setting.name != '', Setting.name != 'is_traffic_reset').all()
+    return Setting.query.filter(Setting.name != '',
+                                Setting.name != 'is_traffic_reset',
+                                Setting.name != 'over_total_traffic_thredsold').all()
 
 
 def get_port():
@@ -108,6 +110,10 @@ def get_total_traffic_thredsold():
     return __get('total_traffic_thredsold', 0)
 
 
+def over_total_traffic_thredsold():
+    return __get('over_total_traffic_thredsold', 0) != 0
+
+
 def get_base_path():
     return __get('base_path', '')
 
@@ -157,6 +163,7 @@ def init_db(update=False):
     add_if_not_exist(Setting('is_traffic_reset', 'is_traffic_reset', '0', 'int', '', False), update)
     add_if_not_exist(Setting('secret_key', '', os.urandom(24), 'text', '', True), False)
     add_if_not_exist(Setting('total_traffic_thredsold', 'total_traffic_thredsold', '0', 'int', '', False), update)
+    add_if_not_exist(Setting('over_total_traffic_thredsold', 'over_total_traffic_thredsold', '0', 'int', '', False), update)
 
     db.session.commit()
 

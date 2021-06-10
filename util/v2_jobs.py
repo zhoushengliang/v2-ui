@@ -66,6 +66,7 @@ def total_traffic_thredsold_job():
         logging.info(f'total_traffic {total_traffic} total_traffic_thredsold {total_traffic_thredsold}')
         if total_traffic > total_traffic_thredsold:
             v2_util.stop_v2ray()
+            config.update_setting_by_key('over_total_traffic_thredsold', 1)
     except Exception as e:
         logging.warning(f'total_traffic_thredsold job error: {e}')
 
@@ -92,20 +93,21 @@ def reset_traffic_job():
         Inbound.query.update({'up': 0, 'down': 0})
         db.session.commit()
         config.update_setting_by_key('is_traffic_reset', 1)
+        config.update_setting_by_key('over_total_traffic_thredsold', 0)
     else:
         config.update_setting_by_key('is_traffic_reset', 0)
     run_next()
 
 
 def check_v2ay_alive_job():
-    if not v2_util.is_running():
+    if not v2_util.is_running() and config.over_total_traffic_thredsold == 0:
         v2_util.restart(True)
 
 
 def init():
     schedule_job(check_v2_config_job, config.get_v2_config_check_interval())
     schedule_job(traffic_job, config.get_traffic_job_interval())
-    # schedule_job(check_v2ay_alive_job, 40)
+    schedule_job(check_v2ay_alive_job, 40)
     schedule_job(total_traffic_thredsold_job, 60)
     reset_day = config.get_reset_traffic_day()
     if reset_day <= 0:
