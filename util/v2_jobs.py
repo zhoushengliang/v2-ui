@@ -35,7 +35,6 @@ def check_v2_config_job():
 
 
 def traffic_job():
-    # with __lock:
     if not v2_util.is_running():
         return
     try:
@@ -50,6 +49,26 @@ def traffic_job():
         db.session.commit()
     except Exception as e:
         logging.warning(f'traffic job error: {e}')
+
+
+def total_traffic_thredsold_job():
+    if not v2_util.is_running():
+        return
+    total_traffic_thredsold = config.get_total_traffic_thredsold()
+    if total_traffic_thredsold == 0:
+        return
+    try:
+        inbs = Inbound.query.all()
+        total_traffic = 0
+        # GB to B
+        total_traffic_thredsold = total_traffic_thredsold * 1024 * 1024 * 1024
+        for inb in inbs:
+            total_traffic = total_traffic + inb.down + inb.up
+        logging.info('total_traffic ' + total_traffic + ' total_traffic_thredsold ' + total_traffic_thredsold)
+        if total_traffic > total_traffic_thredsold:
+            v2_util.stop_v2ray()
+    except Exception as e:
+        logging.warning(f'total_traffic_thredsold job error: {e}')
 
 
 def reset_traffic_job():
@@ -87,6 +106,7 @@ def check_v2ay_alive_job():
 def init():
     schedule_job(check_v2_config_job, config.get_v2_config_check_interval())
     schedule_job(traffic_job, config.get_traffic_job_interval())
+    schedule_job(total_traffic_thredsold_job, config.get_traffic_job_interval())
     schedule_job(check_v2ay_alive_job, 40)
     reset_day = config.get_reset_traffic_day()
     if reset_day <= 0:

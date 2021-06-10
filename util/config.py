@@ -104,12 +104,12 @@ def is_traffic_reset():
     return __get('is_traffic_reset', 0) != 0
 
 
+def get_total_traffic_thredsold():
+    return __get('total_traffic_thredsold', 0)
+
+
 def get_base_path():
     return __get('base_path', '')
-
-
-# def get_v2ctl_cmd_path():
-#     return __get('v2ctl_cmd_path', '/usr/bin/v2ray/v2ctl')
 
 
 def get_dir(*paths):
