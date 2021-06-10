@@ -64,7 +64,7 @@ def total_traffic_thredsold_job():
         total_traffic_thredsold = total_traffic_thredsold * 1024 * 1024 * 1024
         for inb in inbs:
             total_traffic = total_traffic + inb.down + inb.up
-        logging.info('total_traffic ' + total_traffic + ' total_traffic_thredsold ' + total_traffic_thredsold)
+        logging.info(f'total_traffic {total_traffic} total_traffic_thredsold {total_traffic_thredsold}')
         if total_traffic > total_traffic_thredsold:
             v2_util.stop_v2ray()
     except Exception as e:
@@ -114,5 +114,4 @@ def init():
     now = datetime.now()
     next_day = now.date() + timedelta(days=1)
     next_day = datetime.combine(next_day, datetime.min.time())
-
     Timer((next_day - now).seconds + 5, reset_traffic_job).start()
