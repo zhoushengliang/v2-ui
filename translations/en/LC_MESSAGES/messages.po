@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-03-16 15:24+0800\n"
+"POT-Creation-Date: 2021-06-10 15:43+0800\n"
 "PO-Revision-Date: 2019-08-14 12:55+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -30,53 +30,54 @@ msgstr ""
 msgid "username or password wrong"
 msgstr ""
 
-#: server/router.py:41
+#: server/router.py:40
 #, python-format
 msgid "File <%(file)s> does not exist."
 msgstr ""
 
-#: server/router.py:45
+#: server/router.py:44
 msgid "update success, please determine if you need to restart the panel."
 msgstr ""
 
-#: server/router.py:56
+#: server/router.py:55
 msgid "old username or old password wrong"
 msgstr ""
 
-#: server/router.py:60
+#: server/router.py:59
 msgid "update success"
 msgstr ""
 
-#: server/router.py:73 server/router.py:82
+#: server/router.py:72 server/router.py:81
 msgid "Get xray version success"
 msgstr ""
 
-#: server/router.py:87
+#: server/router.py:86
 msgid "Failed to check xray version from Github, please try again after a while"
 msgstr ""
 
-#: server/router.py:126
+#: server/router.py:135
 msgid "Switch xray version success"
 msgstr ""
 
-#: server/router.py:131
+#: server/router.py:140
 msgid "Switch xray-core version failed."
 msgstr ""
 
 #: templates/index.html:47 templates/v2ray/accounts.html:257
-#: templates/v2ray/accounts.html:274 templates/v2ray/inbound_modal.html:322
-#: templates/v2ray/inbound_modal.html:341
+#: templates/v2ray/accounts.html:274 templates/v2ray/inbound_modal.html:374
+#: templates/v2ray/inbound_modal.html:393
 msgid "username"
 msgstr ""
 
 #: templates/index.html:54 templates/v2ray/accounts.html:184
 #: templates/v2ray/accounts.html:214 templates/v2ray/accounts.html:225
 #: templates/v2ray/accounts.html:261 templates/v2ray/accounts.html:278
-#: templates/v2ray/inbound_modal.html:61 templates/v2ray/inbound_modal.html:74
-#: templates/v2ray/inbound_modal.html:202
-#: templates/v2ray/inbound_modal.html:280
-#: templates/v2ray/inbound_modal.html:325
-#: templates/v2ray/inbound_modal.html:344
+#: templates/v2ray/inbound_modal.html:104
+#: templates/v2ray/inbound_modal.html:117
+#: templates/v2ray/inbound_modal.html:246
+#: templates/v2ray/inbound_modal.html:324
+#: templates/v2ray/inbound_modal.html:377
+#: templates/v2ray/inbound_modal.html:396
 msgid "password"
 msgstr ""
 
@@ -85,7 +86,7 @@ msgid "login"
 msgstr ""
 
 #: templates/common/base.html:43 templates/v2ray/setting.html:130
-#: templates/v2ray/setting.html:138
+#: templates/v2ray/setting.html:134
 msgid "seconds"
 msgstr ""
 
@@ -97,7 +98,7 @@ msgstr ""
 msgid "hours"
 msgstr ""
 
-#: templates/common/base.html:49
+#: templates/common/base.html:49 templates/v2ray/setting.html:138
 msgid "days"
 msgstr ""
 
@@ -109,8 +110,8 @@ msgstr ""
 
 #: templates/common/prompt_modal.html:17 templates/common/prompt_modal.html:40
 #: templates/v2ray/accounts.html:44 templates/v2ray/accounts.html:98
-#: templates/v2ray/inbound_modal.html:425
-#: templates/v2ray/inbound_modal.html:431 templates/v2ray/index.html:160
+#: templates/v2ray/inbound_modal.html:480
+#: templates/v2ray/inbound_modal.html:486 templates/v2ray/index.html:160
 #: templates/v2ray/index.html:279
 msgid "confirm"
 msgstr ""
@@ -198,7 +199,7 @@ msgid "none"
 msgstr ""
 
 #: templates/v2ray/accounts.html:82 templates/v2ray/inbound_modal.html:10
-#: templates/v2ray/inbound_modal.html:329
+#: templates/v2ray/inbound_modal.html:381
 msgid "enable"
 msgstr ""
 
@@ -229,25 +230,25 @@ msgid "alter id"
 msgstr ""
 
 #: templates/v2ray/accounts.html:122 templates/v2ray/accounts.html:180
-#: templates/v2ray/accounts.html:221 templates/v2ray/inbound_modal.html:69
-#: templates/v2ray/inbound_modal.html:273
+#: templates/v2ray/accounts.html:221 templates/v2ray/inbound_modal.html:112
+#: templates/v2ray/inbound_modal.html:317
 msgid "method"
 msgstr ""
 
-#: templates/v2ray/accounts.html:136 templates/v2ray/inbound_modal.html:93
+#: templates/v2ray/accounts.html:136 templates/v2ray/inbound_modal.html:136
 msgid "transport"
 msgstr ""
 
 #: templates/v2ray/accounts.html:142 templates/v2ray/accounts.html:155
-#: templates/v2ray/accounts.html:188 templates/v2ray/inbound_modal.html:108
-#: templates/v2ray/inbound_modal.html:192
-#: templates/v2ray/inbound_modal.html:283
+#: templates/v2ray/accounts.html:188 templates/v2ray/inbound_modal.html:152
+#: templates/v2ray/inbound_modal.html:236
+#: templates/v2ray/inbound_modal.html:327
 msgid "camouflage"
 msgstr ""
 
 #: templates/v2ray/accounts.html:147 templates/v2ray/accounts.html:162
-#: templates/v2ray/accounts.html:169 templates/v2ray/inbound_modal.html:231
-#: templates/v2ray/inbound_modal.html:260
+#: templates/v2ray/accounts.html:169 templates/v2ray/inbound_modal.html:275
+#: templates/v2ray/inbound_modal.html:304
 msgid "path"
 msgstr ""
 
@@ -255,24 +256,24 @@ msgstr ""
 msgid "open"
 msgstr ""
 
-#: templates/v2ray/accounts.html:201 templates/v2ray/inbound_modal.html:369
+#: templates/v2ray/accounts.html:201 templates/v2ray/inbound_modal.html:424
 msgid "domain"
 msgstr ""
 
 #: templates/v2ray/accounts.html:229 templates/v2ray/accounts.html:244
-#: templates/v2ray/inbound_modal.html:77
+#: templates/v2ray/inbound_modal.html:120
 msgid "network"
 msgstr ""
 
-#: templates/v2ray/accounts.html:236 templates/v2ray/inbound_modal.html:299
+#: templates/v2ray/accounts.html:236 templates/v2ray/inbound_modal.html:351
 msgid "forward address"
 msgstr ""
 
-#: templates/v2ray/accounts.html:240 templates/v2ray/inbound_modal.html:302
+#: templates/v2ray/accounts.html:240 templates/v2ray/inbound_modal.html:354
 msgid "forward port"
 msgstr ""
 
-#: templates/v2ray/accounts.html:251 templates/v2ray/inbound_modal.html:317
+#: templates/v2ray/accounts.html:251 templates/v2ray/inbound_modal.html:369
 msgid "password auth"
 msgstr ""
 
@@ -289,7 +290,7 @@ msgid "update account"
 msgstr ""
 
 #: templates/v2ray/accounts.html:358 templates/v2ray/setting.html:37
-#: templates/v2ray/setting.html:211
+#: templates/v2ray/setting.html:203
 msgid "update"
 msgstr ""
 
@@ -346,140 +347,140 @@ msgstr ""
 msgid "disable insecure encryption"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:119
+#: templates/v2ray/inbound_modal.html:163
 msgid "request version"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:122
+#: templates/v2ray/inbound_modal.html:166
 msgid "request method"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:125
+#: templates/v2ray/inbound_modal.html:169
 msgid "request path"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:130
-#: templates/v2ray/inbound_modal.html:234
+#: templates/v2ray/inbound_modal.html:174
+#: templates/v2ray/inbound_modal.html:278
 msgid "request header"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:139
-#: templates/v2ray/inbound_modal.html:174
-#: templates/v2ray/inbound_modal.html:243 templates/v2ray/setting.html:78
+#: templates/v2ray/inbound_modal.html:183
+#: templates/v2ray/inbound_modal.html:218
+#: templates/v2ray/inbound_modal.html:287 templates/v2ray/setting.html:78
 msgid "name"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:141
-#: templates/v2ray/inbound_modal.html:176
-#: templates/v2ray/inbound_modal.html:245 templates/v2ray/setting.html:84
+#: templates/v2ray/inbound_modal.html:185
+#: templates/v2ray/inbound_modal.html:220
+#: templates/v2ray/inbound_modal.html:289 templates/v2ray/setting.html:84
 msgid "value"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:156
+#: templates/v2ray/inbound_modal.html:200
 msgid "response version"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:159
+#: templates/v2ray/inbound_modal.html:203
 msgid "response status"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:162
+#: templates/v2ray/inbound_modal.html:206
 msgid "response reason"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:165
+#: templates/v2ray/inbound_modal.html:209
 msgid "response header"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:194
-#: templates/v2ray/inbound_modal.html:285
+#: templates/v2ray/inbound_modal.html:238
+#: templates/v2ray/inbound_modal.html:329
 msgid "not camouflage"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:195
-#: templates/v2ray/inbound_modal.html:286
+#: templates/v2ray/inbound_modal.html:239
+#: templates/v2ray/inbound_modal.html:330
 msgid "camouflage video call"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:196
-#: templates/v2ray/inbound_modal.html:287
+#: templates/v2ray/inbound_modal.html:240
+#: templates/v2ray/inbound_modal.html:331
 msgid "camouflage BT download"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:197
-#: templates/v2ray/inbound_modal.html:288
+#: templates/v2ray/inbound_modal.html:241
+#: templates/v2ray/inbound_modal.html:332
 msgid "camouflage WeChat video"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:198
-#: templates/v2ray/inbound_modal.html:289
+#: templates/v2ray/inbound_modal.html:242
+#: templates/v2ray/inbound_modal.html:333
 msgid "camouflage DTLS 1.2 packages"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:199
-#: templates/v2ray/inbound_modal.html:290
+#: templates/v2ray/inbound_modal.html:243
+#: templates/v2ray/inbound_modal.html:334
 msgid "camouflage wireguard packages"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:205
+#: templates/v2ray/inbound_modal.html:249
 msgid "mtu"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:208
+#: templates/v2ray/inbound_modal.html:252
 msgid "tti"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:211
+#: templates/v2ray/inbound_modal.html:255
 msgid "uplink capacity"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:214
+#: templates/v2ray/inbound_modal.html:258
 msgid "downlink capacity"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:217
+#: templates/v2ray/inbound_modal.html:261
 msgid "congestion"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:220
+#: templates/v2ray/inbound_modal.html:264
 msgid "read buffer size"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:223
+#: templates/v2ray/inbound_modal.html:267
 msgid "write buffer size"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:305
+#: templates/v2ray/inbound_modal.html:357
 msgid "forward network"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:375
+#: templates/v2ray/inbound_modal.html:430
 msgid "certificate"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:378
-#: templates/v2ray/inbound_modal.html:383
+#: templates/v2ray/inbound_modal.html:433
+#: templates/v2ray/inbound_modal.html:438
 msgid "certificate file path"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:379
-#: templates/v2ray/inbound_modal.html:391
+#: templates/v2ray/inbound_modal.html:434
+#: templates/v2ray/inbound_modal.html:446
 msgid "certificate file content"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:386
+#: templates/v2ray/inbound_modal.html:441
 msgid "key file path"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:395
+#: templates/v2ray/inbound_modal.html:450
 msgid "key file content"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:407
+#: templates/v2ray/inbound_modal.html:462
 msgid "sniffing"
 msgstr ""
 
-#: templates/v2ray/inbound_modal.html:410
+#: templates/v2ray/inbound_modal.html:465
 msgid "If there are no special needs, just keep the default."
 msgstr ""
 
@@ -496,7 +497,7 @@ msgid "status"
 msgstr ""
 
 #: templates/v2ray/index.html:66 templates/v2ray/index.html:232
-#: templates/v2ray/setting.html:197
+#: templates/v2ray/setting.html:189
 msgid "error"
 msgstr ""
 
@@ -658,23 +659,14 @@ msgstr ""
 msgid "Change Effective Time"
 msgstr ""
 
-#: templates/v2ray/setting.html:131 templates/v2ray/setting.html:139
+#: templates/v2ray/setting.html:131 templates/v2ray/setting.html:135
+#: templates/v2ray/setting.html:139
 msgid ""
 "Too small number can lead to increased CPU usage, fill 0 or negative at "
 "your own risk."
 msgstr ""
 
 #: templates/v2ray/setting.html:134
-msgid "Command to restart xray"
-msgstr ""
-
-#: templates/v2ray/setting.html:135
-msgid ""
-"When xray needs to be restarted, the panel will automatically run this "
-"command to restart xray, generally without modification."
-msgstr ""
-
-#: templates/v2ray/setting.html:138
 msgid "Statistical traffic interval time"
 msgstr ""
 
@@ -682,61 +674,61 @@ msgstr ""
 msgid "Reset traffic interval days"
 msgstr ""
 
-#: templates/v2ray/setting.html:187
+#: templates/v2ray/setting.html:179
 msgid "xray core version"
 msgstr ""
 
-#: templates/v2ray/setting.html:188
+#: templates/v2ray/setting.html:180
 msgid "current panel version"
 msgstr ""
 
-#: templates/v2ray/setting.html:197
+#: templates/v2ray/setting.html:189
 msgid "not supported type"
 msgstr ""
 
-#: templates/v2ray/setting.html:234
+#: templates/v2ray/setting.html:226
 msgid "please input old username"
 msgstr ""
 
-#: templates/v2ray/setting.html:236
+#: templates/v2ray/setting.html:228
 msgid "please input old password"
 msgstr ""
 
-#: templates/v2ray/setting.html:238
+#: templates/v2ray/setting.html:230
 msgid "please input new username"
 msgstr ""
 
-#: templates/v2ray/setting.html:240
+#: templates/v2ray/setting.html:232
 msgid "please input new password"
 msgstr ""
 
-#: templates/v2ray/setting.html:259
+#: templates/v2ray/setting.html:251
 msgid "NOTICE"
 msgstr ""
 
-#: templates/v2ray/setting.html:261
+#: templates/v2ray/setting.html:253
 msgid ""
 "Most of the configuration items on this page are directly related to the "
 "survival of the panel and v2ray."
 msgstr ""
 
-#: templates/v2ray/setting.html:262
+#: templates/v2ray/setting.html:254
 msgid ""
 "Modifying the wrong value will cause the panel to fail to start, then you"
 " must reset all values."
 msgstr ""
 
-#: templates/v2ray/setting.html:263
+#: templates/v2ray/setting.html:255
 msgid ""
 "Please make a backup yourself. If the data is lost, I will not be "
 "responsible for it."
 msgstr ""
 
-#: templates/v2ray/setting.html:265
+#: templates/v2ray/setting.html:257
 msgid "understood"
 msgstr ""
 
-#: templates/v2ray/setting.html:266
+#: templates/v2ray/setting.html:258
 msgid "not remind"
 msgstr ""
 
@@ -856,6 +848,19 @@ msgstr ""
 #~ "When v2ray needs to be restarted, "
 #~ "the panel will automatically run this"
 #~ " command to restart v2ray, generally "
+#~ "without modification."
+#~ msgstr ""
+
+#~ msgid "total traffic thredsold"
+#~ msgstr ""
+
+#~ msgid "Command to restart xray"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When xray needs to be restarted, "
+#~ "the panel will automatically run this"
+#~ " command to restart xray, generally "
 #~ "without modification."
 #~ msgstr ""
 
