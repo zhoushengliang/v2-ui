@@ -101,6 +101,9 @@ msgstr ""
 msgid "days"
 msgstr ""
 
+msgid "gbs"
+msgstr "GB"
+
 #: templates/common/prompt_modal.html:3 templates/v2ray/accounts.html:44
 #: templates/v2ray/accounts.html:98 templates/v2ray/accounts.html:399
 #: templates/v2ray/index.html:280
