@@ -143,7 +143,7 @@ install_v2-ui() {
     fi
 
     if  [ $# == 0 ] ;then
-        last_version=$(curl -Ls "https://github.com/zhoushengliang/v2-ui/releases" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        last_version=$(curl -Ls "https://api.github.com/repos/zhoushengliang/v2-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
         if [[ ! -n "$last_version" ]]; then
             echo -e "${red}检测 v2-ui 版本失败，可能是超出 Github API 限制，请稍后再试，或手动指定 v2-ui 版本安装${plain}"
             exit 1
